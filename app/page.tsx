@@ -1,3 +1,4 @@
+import IconTextBlock from "@/components/IconTextBlock";
 import TextIcon from "@/components/TextIcon";
 import { icons } from "@/constants/icons";
 
@@ -10,8 +11,9 @@ export default function Home() {
       <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 gap-4 auto-rows-fr">
 
         {/* Left box */}
-        <div className="bg-primary-foreground rounded-sm p-2 min-h-[300px]">
+        <div className="bg-primary-foreground rounded-sm p-4 min-h-[300px]">
           <TextIcon icon={icons.gallery} text="Preview" />
+          <IconTextBlock icon={icons.fire} descOne="Focus Goal" descTwo="Deep Work Finish homepage UI" />
         </div>
 
         {/* Right side grid */}

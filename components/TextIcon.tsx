@@ -2,7 +2,7 @@ import React, { ElementType } from 'react';
 import type { LucideIcon } from 'lucide-react';
 
 interface TextIconProps {
-  // Use ElementType or React.ComponentType for component props
+  // Use ElementType or LucideIcon for component props
   icon?: LucideIcon | ElementType;
   text: string;
   className?: string;
