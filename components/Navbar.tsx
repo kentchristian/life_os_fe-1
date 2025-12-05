@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import React from 'react'
-import { LogOut, Moon, Settings, Sun, User } from "lucide-react"
+import { LogOut, Moon, Settings, Sidebar, Sun, User } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
 
 import {
@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Button } from './ui/button'
 import { useTheme } from "next-themes"
+import { SidebarTrigger } from './ui/sidebar'
 
 const DEFAULT_ITEM_STYLE = "h-[1.2rem] w-[1.2rem] m4-2";
 
@@ -24,7 +25,7 @@ const Navbar = () => {
   return (
     <nav className="p-4 flex items-center justify-between">
       {/* LEFT */}
-      collapseButton
+      <SidebarTrigger className='hover:cursor-pointer' />
 
       {/* RIGHT */}
       <div className="flex items-center gap-4">
